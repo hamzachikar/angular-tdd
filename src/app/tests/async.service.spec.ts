@@ -16,6 +16,7 @@ describe('Spy on dependency async methods',()=>{
 
   it('test the component title is a async data', async() => {
     //given
+    //The main motivation for promises is to bring synchronous style error handling to Async / Callback style code.
     spy.and.returnValue(Promise.resolve('async data'));
 
     //when

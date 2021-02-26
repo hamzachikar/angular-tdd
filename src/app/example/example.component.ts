@@ -10,9 +10,7 @@ export class ExampleComponent implements OnInit {
   title:string;
   constructor(private dependency:ExampleDepService) {
     this.title = this.dependency.getData();
-
    }
-
   ngOnInit() {
   }
 
